@@ -33,63 +33,51 @@
         <div class="col">
           <img
             src="assets/images/Illustration.png"
-            class="img-fluid"
             width="400"
-            alt=""
+            alt="Marketing Illustration"
+            loading="lazy"
           />
         </div>
       </div>
 
       <!-- logo -->
-      <div class="row">
-        <div class="col">
-          <img
-            src="assets/images/amazon.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/images/dribbble.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/images/hubspot.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/images/notion.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/images/Netflix.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/images/zoom.png"
-            class="img-fluid"
-            width="70"
-            alt=""
-          />
-        </div>
+      <div class="d-flex flex-wrap justify-content-between gap-3 my-4">
+        <img
+          src="assets/images/amazon.png"
+          class="img-fluid"
+          width="70"
+          alt="Amazon Logo"
+        />
+        <img
+          src="assets/images/dribbble.png"
+          class="img-fluid"
+          width="70"
+          alt="Dribbble Logo"
+        />
+        <img
+          src="assets/images/hubspot.png"
+          class="img-fluid"
+          width="70"
+          alt="HubSpot Logo"
+        />
+        <img
+          src="assets/images/notion.png"
+          class="img-fluid"
+          width="70"
+          alt="Notion Logo"
+        />
+        <img
+          src="assets/images/Netflix.png"
+          class="img-fluid"
+          width="70"
+          alt="Netflix Logo"
+        />
+        <img
+          src="assets/images/zoom.png"
+          class="img-fluid"
+          width="70"
+          alt="Zoom Logo"
+        />
       </div>
     </div>
 
@@ -99,19 +87,18 @@
         <div class="col">
           <h5>Browse by category</h5>
         </div>
-        <div class="col align-self-end">
-          <p>view all (100)</p>
+        <div class="col text-end">
+          <p>View all (100)</p>
         </div>
       </div>
-      <div class="row">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
         <div class="col">
-          <div class="card" style="width: 13rem">
+          <div class="card">
             <img
               src="assets/images/Illustration.png"
-              width="150"
-              height="150"
               class="card-img-top img-fluid"
-              alt="..."
+              alt="Destination Weddings"
             />
             <div class="card-body">
               <h6 class="card-title">Destination Weddings</h6>
@@ -119,57 +106,57 @@
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 13rem">
+          <div class="card">
             <img
               src="assets/images/Illustration.png"
-              width="150"
-              height="150"
               class="card-img-top img-fluid"
-              alt="..."
+              alt="Travel Tours"
             />
             <div class="card-body">
-              <h6 class="card-title">Wedding and Travel Tours</h6>
+              <h6 class="card-title">Travel Tours</h6>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 13rem">
+          <div class="card">
             <img
               src="assets/images/Illustration.png"
-              width="150"
-              height="150"
               class="card-img-top img-fluid"
-              alt="..."
+              alt="Video Wedding"
             />
             <div class="card-body">
-              <h6 class="card-title">Videographer Wedding</h6>
+              <h6 class="card-title">Video Wedding</h6>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card" style="width: 13rem">
+          <div class="card">
             <img
               src="assets/images/Illustration.png"
-              width="150"
-              height="150"
               class="card-img-top img-fluid"
-              alt="..."
+              alt="Celebrants"
             />
             <div class="card-body">
-              <h5 class="card-title">Celebrants</h5>
+              <h6 class="card-title">Celebrants</h6>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Pagination -->
-      <nav aria-label="Page navigation example">
+      <nav
+        class="d-flex justify-content-center mt-5"
+        aria-label="Page navigation example"
+      >
         <ul class="pagination">
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">1</a>
+          </li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
@@ -191,31 +178,33 @@
       />
       <h1 class="display-5 fw-bold">Your Wedding, Your Way</h1>
       <div class="col-lg-6 mx-auto">
-        <div class="row">
-          <div class="col">
-            <select class="form-select" aria-label="Default select example">
-              <option selected disabled>Select Category</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
+        <form action="" method="get">
+          <div class="row">
+            <div class="col">
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>Select Category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select" aria-label="Default select example">
+                <option selected disabled>Select Location</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <button class="btn btn-secondary w-100" type="submit">
+                Search
+              </button>
+            </div>
           </div>
-          <div class="col">
-            <select class="form-select" aria-label="Default select example">
-              <option selected disabled>Select Location</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col">
-            <button class="btn btn-secondary w-100" type="button">
-              Search
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
