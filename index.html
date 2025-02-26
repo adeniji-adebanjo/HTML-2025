@@ -86,9 +86,99 @@
       .carousel-indicators .active {
         opacity: 1;
       }
+      .navbar .sgu {
+        background-color: lightgray;
+        border-radius: 0px;
+      }
+      .navbar .lgn,
+      .navbar .sgu {
+        font-size: 14.5px;
+        /* background-color: white; */
+        padding: 9px 41px;
+        font-weight: bold;
+      }
+      /* .paw {
+        position: relative;
+        display: inline-block;
+      }
+      .paw img {
+        width: 100%;
+        height: auto;
+      }
+      .txt {
+        position: absolute;
+        top: 78%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-style: italic;
+      } */
     </style>
   </head>
   <body>
+    <nav class="navbar bg-body-tertiary">
+      <form class="container justify-content-end">
+        <button class="btn lgn" type="button">LOGIN</button>
+        <button class="btn sgu" type="button">SIGNUP</button>
+      </form>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-secodary shadow">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src="assets/images/ACE-GroupNG-logo.png"
+            alt="Logo"
+            height="80"
+            width="100"
+          />
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fs-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Venue</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="supplier.html">Supplier</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search Icon -->
+        <div class="d-none d-lg-block">
+          <a href="#" class="text-dark">
+            <i class="bi bi-search" style="font-size: 1.3rem"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
     <!-- Hero Section -->
     <div class="container-fluid px-4 py-5 my-5 hero text-center">
       <!-- <img
@@ -230,20 +320,20 @@
       </div>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-        <div class="card">
-          <img
-            src="https://picsum.photos/id/241/200/200/"
-            class="card-img-top img-fluid"
-            alt="Destination Weddings"
-            loading="lazy"
-          />
-          <div
-            class="card-img-overlay d-flex align-items-end justify-content-end"
-          >
-            <p class="fst-italic px-2 py-1">Explore</p>
-          </div>
-          <div class="card-body">
-            <h6 class="card-title">Maldives</h6>
+        <div class="container mt-5">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="https://picsum.photos/id/247/210/200/"
+              alt="Card image"
+              loading="lazy"
+            />
+            <div class="card-img-overlay">
+              <p class="card-text text-white dp-flex bottom-1 end-1">Explore</p>
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Maldives</h6>
+            </div>
           </div>
         </div>
 
