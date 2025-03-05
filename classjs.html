@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/classjs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Hey <span id="name"></span>! Welcome to JavaScript Class</h3>
+    <button id="cameraButton">See Camera</button>
+    <img id="cameraImage" src="https://picsum.photos/id/250/100/100" alt="" />
+    <button id="wallButton">See wall</button>
+
+    <h1><span id="userName"></span> is here, <em>mafo</em></h1>
+
+    <form id="registrationForm">
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" id="fname" required /> <br />
+
+      <label for="lname">Last Name: </label>
+      <input type="text" name="lname" id="lname" required /> <br />
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required /> <br />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <ul id="userInfo">
+      <li><strong>First Name:</strong> <span id="displayFname"></span></li>
+      <li><strong>Last Name:</strong> <span id="displayLname"></span></li>
+      <li><strong>Email:</strong> <span id="displayEmail"></span></li>
+    </ul>
+
+    <p id="userDetails"></p>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
