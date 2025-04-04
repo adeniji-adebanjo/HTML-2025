@@ -33,8 +33,37 @@
       <li><strong>Email:</strong> <span id="displayEmail"></span></li>
     </ul>
 
-    <p id="userDetails"></p>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      The time is?
+    </button>
+    <form action="#">
+      <input type="text" name="fname" id="" placeholder="enter your name" />
+    </form>
 
-    <script src="assets/js/main.js"></script>
+    <script>
+      let hasPassedMath = true;
+      let hasPassedScience = true;
+
+      let studentProfile = (hasPassedMath =
+        true && hasPassedScience == false
+          ? console.log("Student is qualified")
+          : console.log("Student is not qualified"));
+
+      if ((hasPassedMath = true && hasPassedScience == false)) {
+        console.log("Student is qualified");
+      } else {
+        console.log("Student is not qualified");
+      }
+
+      function myFunction(p1, p2, p3, p4, p5) {
+        return p1 * p2;
+      }
+
+      let fee = myFunction(30, 5);
+      console.log(fee);
+    </script>
+
+    <!-- <script src="assets/js/main.js"></script> -->
   </body>
 </html>

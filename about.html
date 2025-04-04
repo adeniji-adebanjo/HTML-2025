@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index Page</title>
+  </head>
+  <body>
+    <div id="header-container"></div>
+
+    <h1>Welcome to the About Page</h1>
+
+    <script type="module">
+      import { createHeader } from "/assets/js/headerModule.js";
+
+      const { headerElement, style } = createHeader();
+      document.head.appendChild(style);
+      document.getElementById("header-container").appendChild(headerElement);
+    </script>
+  </body>
+</html>

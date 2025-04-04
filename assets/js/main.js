@@ -60,37 +60,54 @@ const user = [
 console.log(user[1].foodChoice[3]);
 
 // const yourAge = prompt("Enter your age");
-const myAge = 39;
+// const myAge = 39;
 
-myAge >= ""
-  ? console.log("We're age mates; no dey try me oh!")
-  : console.log("Abeg, na you be boss here!");
+// myAge > yourAge
+//   ? alert("We're age mates; no dey try me oh!")
+//   : alert("Abeg, na you be boss here!");
 
-document
-  .getElementById("registrationForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevents page refresh
+// document
+//   .getElementById("registrationForm")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevents page refresh
 
-    // Get user input values
-    let firstName = document.getElementById("fname").value;
-    let lastName = document.getElementById("lname").value;
-    let email = document.getElementById("email").value;
+//     // Get user input values
+//     let firstName = document.getElementById("fname").value;
+//     let lastName = document.getElementById("lname").value;
+//     let email = document.getElementById("email").value;
 
-    // Update the page with user details
-    document.getElementById("displayFname").textContent = firstName;
-    document.getElementById("displayLname").textContent = lastName;
-    document.getElementById("displayEmail").textContent = email;
+//     // Update the page with user details
+//     document.getElementById("displayFname").textContent = firstName;
+//     document.getElementById("displayLname").textContent = lastName;
+//     document.getElementById("displayEmail").textContent = email;
 
-    // Update the h1 tag with the user's first name
-    document.getElementById("userName").textContent = firstName;
+//     // Update the h1 tag with the user's first name
+//     document.getElementById("userName").textContent = firstName;
 
-    // Display user details and message
-    document.getElementById("userInfo").style.display = "block";
-    document.getElementById(
-      "userDetails"
-    ).textContent = `Welcome, ${firstName} ${lastName}! Your email is ${email}.`;
-    document.getElementById("userDetails").style.display = "block";
+//     // Display user details and message
+//     document.getElementById("userInfo").style.display = "block";
+//     document.getElementById(
+//       "userDetails"
+//     ).textContent = `Welcome, ${firstName} ${lastName}! Your email is ${email}.`;
+//     document.getElementById("userDetails").style.display = "block";
 
-    // Hide the form
-    document.getElementById("registrationForm").classList.add("hidden");
-  });
+//     // Hide the form
+//     document.getElementById("registrationForm").classList.add("hidden");
+//   });
+
+function showMessage(from, text, greeting, farm) {
+  alert(from + ": " + text + " Jide is saying " + greeting + " from " + farm);
+}
+
+showMessage("Ann", "Hello!", "Good Afternoon", "Soiless farm");
+
+function isAlive(yes) {
+  let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 5,
+    country: "Uganda",
+  };
+}
+
+isAlive(!yes);
